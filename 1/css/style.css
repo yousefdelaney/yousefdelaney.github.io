@@ -1,0 +1,349 @@
+@import url('../fonts/font.css');
+
+
+/******GENERAL CSS START******/
+*,::after,::before{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    margin:0;
+}
+h1{font-size: 30px}
+h2{font-size: 26px;}
+h3{font-size: 22px;}
+h4{font-size: 20px;}
+h5{font-size: 18px;}
+h6{font-size: 16px;}
+.container {
+    width: 1100px;
+    max-width: 100%;
+    padding:0 15px;
+    margin: 0 auto;
+}
+.flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flexRow {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flexColumn {
+    -webkit-flex-direction: Column;
+    -ms-flex-direction: Column;
+    flex-direction: Column;
+}
+
+.alignItemCenter {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.justifyConCenter {
+    justify-content: center;
+}
+/******GENERAL CSS END******/
+
+/******HEADER CSS START******/
+header{
+    background: #333;
+}
+.navbar{
+    flex: 0 1 75%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logobar{
+    flex: 0 1 25%;
+}
+
+.logobar a {
+    padding: 15px 0;
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    display: inline-block;
+}
+.navbar li:last-child a{
+    padding-right: 0;
+}
+.navbar li a img {
+    vertical-align: middle;
+}
+
+/******END CSS START******/
+
+
+.slider{
+    background: url(../images/3a.jpg) fixed;
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+}
+.slider-contant{
+    background: rgba(0,0,0,0.65);
+    width: 780px;
+    padding: 15px;
+    color: #fff;
+    margin: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.slider>div {
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.slider-contant span {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.slider-contant p {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.btn {
+    font-size: 20px;
+    text-decoration: none;
+    width: 226px;
+    text-align: center;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.btn>img{
+    vertical-align: middle;
+}
+.primary-btn{
+    color: #fff;
+    background: #f77d0e;
+}
+.btn-group{
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.btn-group .btn{
+    margin-right: 15px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.tab-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.tab-wrapper p{
+    margin-bottom: 10px;
+}
+.strong {
+    font-weight: 800;
+}
+.quote-page {
+    text-align: center;
+}
+.quote-page h1, .quote-page p{
+    margin: 0;
+}
+.quote-page p{
+    margin-bottom: 15px;
+}
+.quote-page>div{
+    margin: 0 auto;
+}
+
+/******START RECTANGLE BOX CSS******/
+.rectangle-box{
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+.inner-box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.inner-box .btn-group {
+    display: inline-block;
+    width: auto;
+    margin-left: 25px;
+    margin-top: 0;
+}
+.inner-box span {
+    font-size: 28px;
+    display: inline-block;
+}
+.inner-box .btn-group > a{
+    margin-bottom: 0;;
+}
+/******END RECTANGLE BOX CSS******/
+
+footer{
+    background: #333;
+    padding: 15px 0;
+    color: #fff;
+}
+footer p{
+    flex: 0 1 50%;
+    margin: 0;
+}
+footer ul{
+    justify-content: flex-end;
+    flex: 0 1 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li a{
+    color: #333;
+    text-decoration: none;
+    padding: 0 10px;
+    display: inline-block;
+    border-right:1px solid #999;
+    color: #fff;
+}
+footer ul li:last-child a{
+    border: 0;
+    padding-right: 0;
+}
+.tab-wrapper a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+@media(max-width:992px){
+    body{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .slider-contant h1{
+        font-size: 32px;
+    }
+    .slider-contant p {
+        font-size: 22px;
+    }
+    .slider-contant{
+        width: 70%;
+    }
+}
+@media(max-width:767px){
+    .slider-contant span{
+        font-size: 28px;
+    }
+    .slider-contant p {
+        font-size: 16px;
+    }
+    .slider-contant{
+        width: calc(100% - 30px);
+        padding: 20px;
+    }
+    .tabButtons{
+        flex-direction: column;
+    }
+    .tabBtn {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .tab-wrapper ul {
+        column-count: 2;
+    }
+    footer > div > .flexbox{
+        flex-direction: column;
+    align-items: center;
+    }
+    footer p{
+        margin-bottom: 10px;
+    }
+    .btn-group .btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .tab-wrapper h2 {
+        font-size: 24px;
+    }
+    .toggleBtn{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobileMenu .navbar {
+        display: block;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+    .logobar {
+        flex: 0 1 75%;
+    }
+    .mobileMenu .alignItemCenter{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mobileMenu .navbar li a {
+        padding-left: 0;
+    }
+.slider{
+    background-attachment: scroll;
+}
+footer div> ul{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+}
+@media(max-width:320px){
+    .tab-wrapper ul {
+        column-count: 1;
+    }
+}
+@media(max-width:767px){
+    .inner-box .btn-group {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .inner-box span {
+        display: inline-block;
+        width: 100%;
+    }
+}
